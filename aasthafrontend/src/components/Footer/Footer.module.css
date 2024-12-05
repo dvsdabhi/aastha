@@ -3,7 +3,7 @@
     justify-content: space-between;
     padding-inline: 200px;
     bottom: 0px;
-    height: max-content;
+    background-color: #f1f1f1; /* Background color */
 }
 
 .mainfooter input {
