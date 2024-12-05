@@ -1,11 +1,12 @@
 import React from "react";
+import AboutHomiopathyFirst from '../components/AboutHomeopathy/First/AboutHomiopathyFirst';
 
 const AboutHomepathic = () => {
     return (
         <>
-        <div>
-            <h1>AboutHomepathic</h1>
-        </div>
+            <div>
+                <AboutHomiopathyFirst />
+            </div>
         </>
     );
 };

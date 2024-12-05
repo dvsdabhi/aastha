@@ -25,7 +25,7 @@ const Header = () => {
                 <button>SignUp</button>
             </div>
         </header>
-        {/* <hr style="opacity: 0.5; width:1500px;"></hr> */}
+        <hr styles="opacity: 0.5; width:1500px;"></hr>
         </>
     )
 }
