@@ -1,10 +1,11 @@
 import React from "react";
+import HomeFirstCom from "../components/Home/HomeFirstCom/HomeFirstCom";
 
 const Home = () => {
     return (
         <>
         <div>
-            <h1>Home</h1>
+            <HomeFirstCom />
         </div>
         </>
     );

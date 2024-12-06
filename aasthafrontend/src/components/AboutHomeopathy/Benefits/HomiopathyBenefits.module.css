@@ -1,0 +1,47 @@
+.mainBenefits {
+    padding: 10px;
+}
+
+.mainBenefits h3 {
+    font-weight: 700;
+}
+
+.Benefitsimg {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    object-fit: cover;
+}
+
+.Benefitsimg img {
+    height: 413px;
+    width: 370px;
+}
+
+.BenefitsimgText {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444444;
+}
+
+.BenefitsimgText p {
+    margin-block-start:0
+}
+
+.BenefitsText {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444444;
+}

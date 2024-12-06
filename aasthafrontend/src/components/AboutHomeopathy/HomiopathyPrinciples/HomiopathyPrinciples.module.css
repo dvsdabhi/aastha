@@ -1,0 +1,54 @@
+.mainPrinciples {
+    padding: 10px;
+}
+
+.PrinciplesImg {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    object-fit: cover;
+}
+
+.PrinciplesImg img {
+    height: 418px;
+    width: 375px;
+    position: right 0px;
+}
+
+.PrinciplesimgText {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    row-gap: 10px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444444;
+}
+
+.PrinciplesimgText p {
+    margin-block-start:0
+}
+
+.PrinciplesimgText span {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444444;
+}
+
+.PrinciplesText {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444444;
+}

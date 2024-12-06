@@ -1,0 +1,47 @@
+.mainMyths {
+    padding: 10px;
+}
+
+.mainMyths h3 {
+    font-weight: 700;
+}
+
+.Mythsimg {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    object-fit: cover;
+}
+
+.Mythsimg img {
+    height: 413px;
+    width: 370px;
+}
+
+.MythsimgText {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444444;
+}
+
+.MythsimgText p {
+    margin-block-start:0
+}
+
+.MythsText {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444444;
+}

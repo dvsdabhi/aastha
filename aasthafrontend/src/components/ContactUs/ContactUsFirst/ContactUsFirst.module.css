@@ -1,0 +1,54 @@
+.ContactUsFirst {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.ContactUsFirstLocation {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #e1f3ca;
+    padding: 35px;
+    border-radius: 30px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.ContactUsFirstLocationText {
+    display: flex;
+    text-align: start;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444444;
+}
+
+.FaMapLocation {
+    font-size: 20px;
+}
+
+
+.ContactUsFirstAppointment {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #dfeefa;
+    padding: 35px;
+    border-radius: 30px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.ContactUsFirstEmail {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #fde6e6;
+    padding: 35px;
+    border-radius: 30px;
+    width: 100%;
+    cursor: pointer;
+}

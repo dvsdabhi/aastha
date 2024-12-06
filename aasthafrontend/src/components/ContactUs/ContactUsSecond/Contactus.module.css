@@ -1,0 +1,21 @@
+.ContactUsSecond {
+    text-align: start;
+}
+
+.ContactUsSecond h2 {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 51px;
+    color: #000000;
+}
+
+.ContactUsSecond p {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444444;
+}

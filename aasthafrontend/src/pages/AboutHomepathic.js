@@ -1,5 +1,5 @@
 import React from "react";
-import AboutHomiopathyFirst from '../components/AboutHomeopathy/First/AboutHomiopathyFirst';
+import AboutHomiopathyFirst from '../components/AboutHomeopathy/AboutHomiopathyFirst';
 
 const AboutHomepathic = () => {
     return (

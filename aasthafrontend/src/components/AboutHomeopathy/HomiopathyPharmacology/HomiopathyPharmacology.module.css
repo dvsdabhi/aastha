@@ -1,0 +1,44 @@
+.mainPharma {
+    padding: 10px;
+}
+
+.Pharmaimg {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    object-fit: cover;
+}
+
+.Pharmaimg img {
+    height: 413px;
+    width: 370px;
+}
+
+.PharmaimgText {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    row-gap: 10px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444444;
+}
+
+.PharmaimgText p {
+    margin-block-start:0
+}
+
+.PharmaText {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444444;
+}

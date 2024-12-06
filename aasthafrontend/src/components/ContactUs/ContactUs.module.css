@@ -1,0 +1,35 @@
+/* .mainContact {
+    margin-block: 50px;
+    padding-inline: 200px;
+}
+
+.mainContactdrop {
+    display: flex;
+    width: 100%;
+} */
+
+.mainContact {
+    margin-block: 50px;
+    padding-inline: 200px;
+}
+
+.mainContactdrop {
+    display: flex;
+    gap: 20px; /* Add space between the elements */
+    width: 100%;
+}
+
+.mainContactdrop > div {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .mainContactdrop {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .mainContact {
+        padding-inline: 20px; /* Reduce padding for smaller screens */
+    }
+}
