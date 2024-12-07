@@ -26,7 +26,7 @@ const HomeFirstCom = () => {
                     <p>This site is designed to provide helpful information and so please look around and also visit my Blog where you will find guidance on a range of health concerns.</p>
                 </div>
                 <div>
-                    <button>Contact me</button>
+                    <Link to="/contact" className={styles.buttonlink}>Contact me</Link>
                 </div>
             </div>
         </div>
