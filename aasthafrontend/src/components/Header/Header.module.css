@@ -61,30 +61,32 @@
 
 .headmain {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px 50px;
+    padding: 5px 30px;
     background-color: #f9f9f9;
     font-family: 'Arial', sans-serif;
+    width: auto;
 }
 
 .navList {
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    gap: 20px;
+    /* margin: 0;
+    padding: 0; */
 }
 
 .navList li {
-    margin-right: 20px;
+    /* margin-right: 10px; */
     position: relative; /* For dropdown positioning */
 }
 
 .navList a {
     text-decoration: none;
     color: #333;
-    font-size: 1rem;
-    padding: 5px 10px;
+    font-size: 16px;
+    /* padding: 5px 5px; */
     transition: color 0.3s ease;
 }
 
@@ -126,3 +128,28 @@
 .dropdownMenu a:hover {
     background-color: #f5f5f5;
 }
+
+.headmain button {
+    background-color: white;
+    color: #158cfe;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: normal;
+    border: 2px solid #0d6efd;
+    cursor: pointer;
+}
+
+.headmain button:hover {
+    background-color: #0d6efd;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: normal;
+    border: 2px solid #0d6efd;
+} 

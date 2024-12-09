@@ -1,0 +1,51 @@
+.treatmentContainerMain {
+    padding: 20px;
+    max-width: 300px;
+    color: #000000;
+    text-align: start;
+}
+
+.treatmentContainer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #dcedc3;
+    max-width: 300px;
+    border-radius: 25px;
+    background-color: #fafff3;
+    color: #000000;
+    text-align: start;
+    margin-block: 20px;
+}
+
+.Timing {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #dcedc3;
+    max-width: 300px;
+    border-radius: 25px;
+    background-color: #fafff3;
+    color: #000000;
+    text-align: start;
+}
+
+.treatmentList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.treatmentItem {
+    margin-bottom: 10px;
+    padding-block: 10px;
+}
+
+.treatmentItem a {
+    text-decoration: none;
+    color: #4a4754;;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.treatmentItem a:hover {
+    color: #0056b3;
+}

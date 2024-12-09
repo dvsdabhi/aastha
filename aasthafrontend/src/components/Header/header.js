@@ -49,11 +49,11 @@ const Header = () => {
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/about">About Us</Link></li>
                             <li className={styles.dropdown}>
-                                <Link to="/service">Treatment</Link>
+                                <Link>Treatment</Link>
                                 <ul className={styles.dropdownMenu}>
-                                    <li><Link to="/service/dental">Dental Care</Link></li>
-                                    <li><Link to="/service/skincare">Skincare</Link></li>
-                                    <li><Link to="/service/general">General Treatment</Link></li>
+                                    <li><Link to="/treatment/dental">Dental Care</Link></li>
+                                    <li><Link to="/treatment/skincare">Skincare</Link></li>
+                                    <li><Link to="/treatment/general">General Treatment</Link></li>
                                 </ul>
                             </li>
                             <li><Link to="/about-homeopathy">About Homeopathy</Link></li>
@@ -63,8 +63,7 @@ const Header = () => {
                     </nav>
                 </div>
                 <div className={styles.authButtons}>
-                    <button>Login</button>
-                    <button>SignUp</button>
+                    <button>Book an Appointment</button>
                 </div>
             </header>
             <hr style={{ opacity: 0.5, width: "1500px" }} />

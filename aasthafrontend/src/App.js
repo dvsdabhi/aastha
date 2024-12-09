@@ -6,7 +6,7 @@ import About from './pages/About';
 import Appointment from './pages/Appointment';
 import AboutHomepathic from './pages/AboutHomepathic';
 import Contact from './pages/Contact';
-import Service from './pages/Service';
+import Treatment from './pages/Treatment';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -20,12 +20,12 @@ function App() {
           <Route path='/appointment' element={<Appointment />} />
           <Route path='/about-homeopathy' element={<AboutHomepathic />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/service' element={<Service />} />
+          <Route path='/treatment/dental' element={<Treatment />} />
         </Routes>
         <Footer />
       </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
