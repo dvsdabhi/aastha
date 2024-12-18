@@ -1,4 +1,4 @@
-const sessionIdToUserMap = new map();
+const sessionIdToUserMap = new Map();
 
 const setUser = (id, user) => {
     sessionIdToUserMap(id, user);
