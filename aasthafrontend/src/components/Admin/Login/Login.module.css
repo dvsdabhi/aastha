@@ -1,0 +1,101 @@
+/* General Reset */
+.loginContainer {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f7f9fc;
+  }
+  
+  /* Login Box */
+  .loginBox {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading */
+  .title {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  /* Input Group */
+  .inputGroup {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Button */
+  .loginBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .loginBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error Message */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .loginBox {
+      padding: 20px;
+    }
+  
+    .loginBtn {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .loginBox {
+      padding: 15px;
+    }
+  
+    .title {
+      font-size: 20px;
+    }
+  
+    .loginBtn {
+      padding: 8px;
+      font-size: 12px;
+    }
+  }
+  
