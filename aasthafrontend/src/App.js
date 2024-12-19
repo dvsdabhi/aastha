@@ -10,7 +10,22 @@ import Treatment from './pages/Treatment';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Dashboard from './components/Admin/Dashboard/Dashboard';
 import Login from './components/Admin/Login/Login';
+import PrivateRoute from './components/Admin/PrivateRoute';
+import AdminHeader from './components/Admin/Header/Header';
+import { useState, useEffect } from 'react';
+import Inquiry from './components/Admin/Inquiry/Inquiry';
+
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState();
+  useEffect(() => {
+    const auth = localStorage.getItem("Auth");
+    if (auth) {
+      setIsLoggedIn(true);
+    } else {
+      setIsLoggedIn(false);
+    }
+  }, []);
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -35,10 +50,16 @@ function App() {
           {/* Admin Routes */}
           <Route path='/admin/*' element={
             <>
+            <div style={{ display: 'flex' }}>
+            {isLoggedIn && <AdminHeader />}
               <Routes>
                 <Route path='/' element={<Login />}/>
-                <Route path='/dashboard' element={<Dashboard />}/>
+                <Route path='/' element={<PrivateRoute />}>
+                  <Route path='/dashboard' element={<Dashboard />}/>
+                  <Route path='/inquiry' element={<Inquiry />}/>
+                </Route>
               </Routes>
+              </div>
             </>
             } 
           />

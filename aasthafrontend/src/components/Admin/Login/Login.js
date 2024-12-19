@@ -20,12 +20,14 @@ const Login = () => {
       e.preventDefault();
       try {
         const res = await axios.post('http://localhost:5000/admin/admin-login',{loginData});
-        console.log("=-=",res);
+        console.log("=-=",res.data.token);
         if(res.data.status === 200){
+          localStorage.setItem("Auth", JSON.stringify(res.data.token));
           navigate('/admin/dashboard');
+          window.location.reload();
         }
       } catch (error) {
-        console.log("not vali email");
+        console.log("not valid email");
       }
     };
   

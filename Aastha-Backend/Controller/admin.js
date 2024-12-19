@@ -1,8 +1,8 @@
 const Admin = require('../Models/admin.models');
 const bcrypt = require('bcrypt');
 const jwtProvider = require('../middleware/middleware');
-const { v4 : uuidv4 } = require('uuid');
-const { setUser } = require('../services/auth');
+// const { v4 : uuidv4 } = require('uuid');
+// const { setUser } = require('../services/auth');
 
 const createAdmin = async (req,res) => {
     const { email, password } = req.body;
@@ -14,11 +14,11 @@ const createAdmin = async (req,res) => {
             password : pass
         });
         let admin = await adminData.save();
-        // const jwt = jwtProvider.generateToken(admin._id);
-        const sessionId = uuidv4();
-        setUser(sessionId, admin);
-        res.cookie("uid",sessionId);
-        return res.status(200).send({status:200,message : "Admin create successfully !!.", data:admin});
+        const jwt = jwtProvider.generateToken(admin._id);
+        // const sessionId = uuidv4();
+        // setUser(sessionId, admin);
+        res.cookie("uid",jwt);
+        return res.status(200).send({status:200,message : "Admin create successfully !!.", data:admin,token:jwt});
     } catch (error) {
         return res.status(501).send({status:501,message : error.message});
     }
@@ -32,8 +32,8 @@ const adminLogin = async (req,res) => {
             if(admin){
                 const pass = await bcrypt.compare(password,admin.password);
                 if(pass){
-                    // const jwt = jwtProvider.generateToken(admin._id)
-                    return res.status(201).send({status:200,message:"login success.....",result:admin});
+                    const jwt = jwtProvider.generateToken(admin._id)
+                    return res.status(201).send({status:200,message:"login success.....",result:admin,token:jwt});
                 } else {
                     return res.status(401).send({status:401, message:"Please enter a valid password"});
                 }

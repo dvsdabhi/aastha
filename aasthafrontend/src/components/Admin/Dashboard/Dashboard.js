@@ -1,22 +1,22 @@
 import React from "react";
 import styles from "./Dashboard.module.css";
+import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+
+  const LogOut = () => {
+    localStorage.removeItem("Auth");
+    // navigate("/admin");
+    window.location.reload();
+  }
     return (
-        <div className={styles.dashboard}>
-          <aside className={styles.sidebar}>
-            <h2 className={styles.logo}>Admin Panel</h2>
-            <ul className={styles.navList}>
-              <li className={styles.navItem}>Dashboard</li>
-              <li className={styles.navItem}>Users</li>
-              <li className={styles.navItem}>Reports</li>
-              <li className={styles.navItem}>Settings</li>
-            </ul>
-          </aside>
+        // <div className={styles.dashboard}>
           <div className={styles.main}>
             <header className={styles.header}>
               <h1 className={styles.title}>Welcome, Admin</h1>
-              <button className={styles.logout}>Logout</button>
+              <button className={styles.logout} onClick={LogOut}>Logout</button>
             </header>
             <section className={styles.content}>
               <div className={styles.card}>
@@ -33,7 +33,7 @@ const Dashboard = () => {
               </div>
             </section>
           </div>
-        </div>
+        // </div>
       );
 }
 

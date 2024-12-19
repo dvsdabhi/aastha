@@ -1,0 +1,71 @@
+/* Inquiry.module.css */
+.inquiryPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 20px auto;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .inquiryTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inquiryTable th,
+  .inquiryTable td {
+    padding: 15px;
+    text-align: left;
+    font-size: 1.1rem;
+    word-wrap: break-word;  /* Ensures long words wrap */
+  }
+  
+  .inquiryTable th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .inquiryTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .inquiryTable tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .solveButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .solveButton:hover {
+    background-color: #45a049;
+  }
+  
+  .solveButton:focus {
+    outline: none;
+  }
+  
